@@ -90,7 +90,7 @@ public class map extends AppCompatActivity implements OnMapReadyCallback {
         mapView = mapFragment.getView();
 
         mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(map.this);
-        Places.initialize(map.this, getString(R.string.google_maps_api));
+        Places.initialize(map.this, getString(R.string.google_maps_api)); //enter maps api key
         placesClient = Places.createClient(this);
         final AutocompleteSessionToken token = AutocompleteSessionToken.newInstance();
 
